@@ -1,0 +1,28 @@
+body {font-family:Tahoma Verdana Arial sans-serif }	
+a { text-decoration:none }
+	#the_side_bar li { list-style: none; margin:0px;padding:0px } 
+	#the_side_bar ul { margin-left:0px; padding:0px; }
+	/* Control how "sided out" the tree is */
+	#the_side_bar ul  ul , #the_side_bar ul li { margin-left:8px; padding:0px; } 
+
+	#the_side_bar ul   li.liServer  .bullet { height:15px;width:15px; cursor: pointer; background: url(images/blank.gif)  center left no-repeat; }
+	/* Show "bullets" in the links, depending on the class of the LI that the link's in */
+	#the_side_bar ul   li.liOpen    .bullet { height:15px;width:15px; cursor: pointer; background: url(images/minus.gif)  center left no-repeat; }
+	#the_side_bar ul  li.liClosed  .bullet { height:15px;width:15px; cursor: pointer; background: url(images/plus.gif)   center left no-repeat; }
+	#the_side_bar ul  li.liBullet  .bullet { height:15px;width:15px; cursor: default; background: url(images/bullet.gif) center left no-repeat; } 
+	/* Sublists are visible or not based on class of parent LI */
+	#the_side_bar  ul li.liOpen    ul { display: block; }
+	#the_side_bar  ul li.liClosed  ul { display: none; }
+	
+	#the_side_bar  ul li.liOpen    img.legendimg { display: inline; }
+	#the_side_bar  ul li.liClosed  img.legendimg { display: none; }
+	
+	/* Format menu items differently depending on what level of the tree they are in */
+	#the_side_bar ul li { font-size:  11px; }
+	#the_side_bar ul li ul li { font-size: 10px; }
+	#the_side_bar ul li ul li ul li { font-size: 9px; }
+	#the_side_bar ul li ul li ul li ul li { font-size: 8px; } 
+	
+	.inView { display:block }
+	.outView { color:silver; opacity:0.4; alpha(opacity=40) }
+
